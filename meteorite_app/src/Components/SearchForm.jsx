@@ -39,7 +39,7 @@ class SearchForm extends React.Component {
         }}
       >
         <label htmlFor="dropdown">
-          Search By
+         <span>Search By</span> 
           <select
             onChange={this.updateCategory}
             name="dropdown"
@@ -51,7 +51,7 @@ class SearchForm extends React.Component {
         </label>
         <br />
         <label htmlFor="searchtext">
-          Search text
+          <span>Search text</span>
           <input
             onChange={this.updateText}
             id="searchtext"

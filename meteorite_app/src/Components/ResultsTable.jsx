@@ -3,12 +3,13 @@ import React from "react";
 class ResultsTable extends React.Component {
   makeRows = (meteorites) => {
     return meteorites.map((element, index) => {
+        const year = element.year === undefined ? "n/a" : element.year.slice(0,4)
       return (
         <tr key={index} id={index}>
-          <td>{element.name}</td>
+          <td className="left-column">{element.name}</td>
           <td>{element.id}</td>
           <td>{element.recclass}</td>
-          <td>{element.year}</td>
+          <td className="right-column">{year}</td>
         </tr>
       );
     });
@@ -19,10 +20,10 @@ class ResultsTable extends React.Component {
       <table>
         <tbody>
           <tr>
-            <th>Name</th>
+            <th className="left-column">Name</th>
             <th>Id</th>
             <th>Recclass</th>
-            <th>Year</th>
+            <th className="right-column">Year</th>
           </tr>
           {this.makeRows(this.props.meteorites)}
         </tbody>
