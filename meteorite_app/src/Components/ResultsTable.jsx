@@ -4,7 +4,7 @@ class ResultsTable extends React.Component {
   makeRows = (meteorites) => {
     return meteorites.map((element, index) => {
       return (
-        <tr id={index}>
+        <tr key={index} id={index}>
           <td>{element.name}</td>
           <td>{element.id}</td>
           <td>{element.recclass}</td>
