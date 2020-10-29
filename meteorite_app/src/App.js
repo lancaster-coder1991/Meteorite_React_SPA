@@ -46,6 +46,8 @@ class App extends React.Component {
 
   makeMarkers = () => {
     return this.state.meteorites.map((meteorite) => {
+      const year =
+        meteorite.year === undefined ? "n/a" : meteorite.year.slice(0, 4);
       return (
         <Marker
           key={meteorite.id}
@@ -54,7 +56,7 @@ class App extends React.Component {
           <Popup>
             {`Name: ${meteorite.name}`}
             <br />
-            {`Year: ${meteorite.year.slice(0, 4)}`}
+            {`Year: ${year}`}
           </Popup>
         </Marker>
       );
