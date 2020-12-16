@@ -4,7 +4,7 @@ This SPA uses React and calls to NASA’s meteorite landing API to display a pag
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-To run, clone the repository to a local directory. Ensure [Node.js](https://nodejs.org/en/download/) is installed and then navigate into the new directory and run the following command in a terminal to install the required dependencies:
+To run, clone the repository to a local directory. Ensure [Node.js](https://nodejs.org/en/download/) is installed and then navigate into the new directory/meteorite_app and run the following command in a terminal to install the required dependencies:
 
 `npm i`
 
